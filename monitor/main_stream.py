@@ -34,7 +34,7 @@ st.set_page_config(page_title="Relatório Automático de Estoque", layout="wide"
 
 st.title("📊 Relatório Automático de Estoque - Powered by GPT")
 # Parâmetros do modelo e do relatório
-
+st.success(f"Current directory: {os.getcwd()}")
 # Carrega o arquivo CSV diretamente do METRICS_PATH
 if os.path.exists(METRICS_PATH):
     csv_file = open(METRICS_PATH, "r", encoding="utf-8")
