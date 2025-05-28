@@ -36,22 +36,12 @@ st.title("📊 Relatório Automático de Estoque - Powered by GPT")
 # Parâmetros do modelo e do relatório
 st.success(f"Current directory: {os.getcwd()}")
 # Carrega o arquivo CSV diretamente do METRICS_PATH
-if os.path.exists(METRICS_PATH):
-    csv_file = open(METRICS_PATH, "r", encoding="utf-8")
-    st.success(f"Arquivo CSV carregado: {METRICS_PATH}")
-else:
-    csv_file = None
-    st.error(f"Arquivo CSV não encontrado: {METRICS_PATH}")
+csv_file = open(METRICS_PATH, "r", encoding="utf-8")
+st.success(f"Arquivo CSV carregado: {METRICS_PATH}")
 
 # Carrega o arquivo JSON do plano diretamente do PLANO_PATH
-if os.path.exists(PLANO_PATH):
-    plano_file = open(PLANO_PATH, "rb")
-    st.success(f"Arquivo JSON do plano carregado: {PLANO_PATH}")
-else:
-    plano_file = None
-    st.info(f"Arquivo JSON do plano não encontrado: {PLANO_PATH}")
-
-
+plano_file = open(PLANO_PATH, "rb")
+st.success(f"Arquivo JSON do plano carregado: {PLANO_PATH}")
 
 modelo = "o3-mini-2025-01-31"
 btn_gerar = st.button("Gerar Relatório")
