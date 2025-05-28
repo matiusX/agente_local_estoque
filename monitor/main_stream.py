@@ -27,7 +27,7 @@ START_DATE= config.get('start_date_bibi')
 END_DATE = config.get('end_date_bibi')
 
 METRICS_PATH = "monitor/metricas_extraidas.csv"
-PLANO_PATH = "monitor/plano_acao_bibi.json"
+PLANO_PATH = "monitor/plano_acao_bibi_1.json"
 api_key = os.getenv("OPENAI_API_KEY")
 
 st.set_page_config(page_title="Relatório Automático de Estoque", layout="wide")
