@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "contratante": 2,
+  "planejamento":1,
+  "problems": {
+    "1": {
+      "action_ids": [
+        "1"
+      ],
+      "metric_ids": [
+        "total_sku_com_estoque_negativo",
+        "percent_sku_com_estoque_negativo",
+        "custo_total_estoque_negativo"
+      ]
+    },
+    "2": {
+      "action_ids": [
+        "2"
+      ],
+      "metric_ids": [
+        "total_sku_inativo_(estoque_>_0)",
+        "percent_sku_inativo_(estoque_>_0)",
+        "custo_total_inativo_(estoque_>_0)"
+      ]
+    },
+    "3": {
+      "action_ids": [
+        "3"
+      ],
+      "metric_ids": [
+        "cobertura_em_dias_grupo_a",
+        "cobertura_em_dias_grupo_b",
+        "cobertura_em_dias_grupo_c"
+      ]
+    },
+    "4": {
+      "action_ids": [
+        "1"
+      ],
+      "metric_ids": [
+        "total_sku_verificados",
+        "total_sku_consistentes",
+        "percent_sku_consistentes",
+        "total_sku_inconsistentes",
+        "percent_sku_inconsistentes"
+      ]
+    }
+  },
+  "actions": {
+    "1": {
+      "metric_ids": [
+        "total_sku_verificados",
+        "total_sku_consistentes",
+        "percent_sku_consistentes",
+        "total_sku_inconsistentes",
+        "percent_sku_inconsistentes",
+        "total_sku_com_estoque_negativo",
+        "percent_sku_com_estoque_negativo",
+        "custo_total_estoque_negativo"
+      ]
+    },
+    "2": {
+      "metric_ids": [
+        "total_sku_inativo_(estoque_>_0)",
+        "percent_sku_inativo_(estoque_>_0)",
+        "custo_total_inativo_(estoque_>_0)"
+      ]
+    },
+    "3": {
+      "metric_ids": [
+        "cobertura_em_dias_grupo_a",
+        "cobertura_em_dias_grupo_b",
+        "cobertura_em_dias_grupo_c"
+      ]
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "problems": {
+    "1": {
+      "action_ids": ["3", "7"],
+      "metric_ids": ["nome_metrica_01", "nome_metrica_05"]
+    },
+    "2": {
+      "action_ids": ["5"],
+      "metric_ids": ["nome_metrica_22", "nome_metrica_12"]
+    }
+  },
+  "actions": {
+    "3": {
+        "metric_ids": ["nome_metrica_01", "nome_metrica_05"]
+    },
+    "5": {
+        "metric_ids": ["nome_metrica_22", "nome_metrica_12"]
+    },
+    "7": {
+        "metric_ids": ["nome_metrica_01", "nome_metrica_05"]
+    }
+  }
+}

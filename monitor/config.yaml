@@ -1,0 +1,22 @@
+# config.yaml
+
+# List of allowed temporalities (in days)
+temporality_days:
+  - 7
+  - 15
+  - 30
+
+# Default temporality value (in days)
+temporality: 7
+
+# vars for bibi
+id_bibi: 2
+start_date_bibi: 2025-05-20
+end_date_bibi: 2025-08-20
+
+#vars for add
+id_add: 1
+start_date_add: 2025-03-01
+end_date_add:
+
+# Add more parameters as needed

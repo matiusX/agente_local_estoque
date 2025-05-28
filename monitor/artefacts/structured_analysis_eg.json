@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "planejamento_id": 123,
+  "run_timestamp": "2025-05-26T02:15:00-04:00",
+
+  "problems": [
+    {
+      "problem_id": "P01",
+      "descricao": "Descrição que vem do csv",
+      "status": "em_andamento | resolvido | monitorar",
+      "metric_ids": ["m01","m05","outras metricas relevantes p esse problema"],
+      "action_ids": ["A03", "A07", "outras acoes que foram pensadas p esse problema"]
+    }
+  ],
+
+  "actions": [
+    {
+      "action_id": "A07",
+      "descricao": "Rebalancear sortimento loja A",
+      "implementada_em": "2025-05-10",
+      "problem_ids": ["P01"],
+      "metric_ids": ["m01","m05","m12"],
+      "impacto_esperado": "-2 p.p. ruptura",
+      "observado": "-3.1 p.p.",
+      "eficacia": "alta",
+      "recomendacao": "replicar_na_loja_B"
+    }
+  ],
+
+  "metrics": {
+        "m01": {
+            "name": "Ruptura de Gôndola (%)",
+            "has_target": true,
+            "baseline": 8.4,
+            "current": 5.3,
+            "target": 6.0,
+            "delta_pct": -36.9,
+            "slope_7d": -0.27,
+            "status": "acima_meta | dentro_meta | abaixo_meta",
+            "problem_ids": ["P01"],
+            "action_ids": ["A03","A07"]
+        },
+        "m22": {
+            "name": "Cobertura de Estoque (dias)",
+            "has_target": false,
+            "baseline": 45,
+            "current": 55,
+            "target": null,             
+            "delta_pct": 22.2,
+            "slope_7d": 0.9,
+            "status": "acima_meta | dentro_meta | abaixo_meta",
+            "problem_ids": ["P02"],
+            "action_ids": ["A05"]
+        }
+    },
+ 
+  "alerts": ["lista estruturada de eventos que exigem atenção imediata"],
+  "llm_summary": "Mensagem human-friendly de 1–2 frases que resume o estado geral (“headline”).",
+  "next_report_due": "2025-06-01"
+}
