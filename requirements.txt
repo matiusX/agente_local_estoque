@@ -1,4 +1,4 @@
-python==3.10.16
+python==3.13.3
 streamlit==1.45.1
 pandas==2.2.3
 langchain==0.3.25
