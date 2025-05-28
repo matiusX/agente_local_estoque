@@ -1,0 +1,5 @@
+id_problema,id_planejamento,desc_problema
+1,1,"Estoque negativo significativo"
+2,1,"Alto índice de SKUs inativos com saldo"
+3,1,"Desequilíbrio na cobertura de estoque"
+4,1,"Inconsistências de inventário"

@@ -1,0 +1,111 @@
+{
+    "data_inicio": "2025-05-20",
+    "contratante": "bibi",
+    "acoes": [
+        {
+            "id_acao": 1,
+            "desc_acao": "Implementar inventário cíclico semanal, priorizando SKUs grupo A e B com histórico de divergências",
+            "impacto_esperado": [
+                "Redução de 80% nas divergências de estoque",
+                "Aumento de 15% na assertividade de disponibilidade para venda",
+                "Melhoria no atendimento ao cliente por ter informações confiáveis"
+            ]
+        },
+        {
+            "id_acao": 2,
+            "desc_acao": "Criar programa de liquidação progressiva para SKUs sem venda há mais de 1 ano; Realizar cross-selling com produtos ativos",
+            "impacto_esperado": [
+                "Liberação imediata de espaço físico",
+                "Conversão de produtos sem giro em receita",
+                "Redução de custos com manutenção de estoque obsoleto"
+            ]
+        },
+        {
+            "id_acao": 3,
+            "desc_acao": "Revisar parâmetros de reposição com política diferenciada por grupo ABC; Implementar modelo de estoque mínimo para grupo C",
+            "impacto_esperado": [
+                "Equilíbrio entre capital investido e nível de serviço",
+                "Redução de compras desnecessárias",
+                "Melhoria no fluxo de caixa por otimização do capital de giro"
+            ]
+        }
+    ],
+    "problemas": [
+        {
+            "id_problema": 1,
+            "desc_problema": "Estoque negativo significativo"
+        },
+        {
+            "id_problema": 2,
+            "desc_problema": "Alto índice de SKUs inativos com saldo"
+        },
+        {
+            "id_problema": 3,
+            "desc_problema": "Desequilíbrio na cobertura de estoque"
+        },
+        {
+            "id_problema": 4,
+            "desc_problema": "Inconsistências de inventário"
+        }
+    ],
+    "metricas": [
+        "total_sku_com_estoque_zero",
+        "percent_sku_com_estoque_zero",
+        "total_sku_com_estoque_positivo",
+        "percent_sku_com_estoque_positivo",
+        "custo_total_estoque_positivo",
+        "total_sku_com_estoque_negativo",
+        "percent_sku_com_estoque_negativo",
+        "custo_total_estoque_negativo",
+        "total_sku_inativo_(estoque_>_0)",
+        "percent_sku_inativo_(estoque_>_0)",
+        "custo_total_inativo_(estoque_>_0)",
+        "total_sku_inativo_(estoque_<=_0)",
+        "percent_sku_inativo_(estoque_<=_0)",
+        "total_sku_ativo_(estoque_>_0)",
+        "percent_sku_ativo_(estoque_>_0)",
+        "custo_total_ativo_(estoque_>_0)",
+        "total_sku_ativo_(estoque_<=_0)",
+        "percent_sku_ativo_(estoque_<=_0)",
+        "total_sku_verificados",
+        "total_sku_consistentes",
+        "percent_sku_consistentes",
+        "total_sku_inconsistentes",
+        "percent_sku_inconsistentes",
+        "total_sku_grupo_a",
+        "total_sku_grupo_b",
+        "total_sku_grupo_c",
+        "percent_sku_grupo_a",
+        "percent_sku_grupo_b",
+        "percent_sku_grupo_c",
+        "total_venda_grupo_a",
+        "total_venda_grupo_b",
+        "total_venda_grupo_c",
+        "percent_venda_grupo_a",
+        "percent_venda_grupo_b",
+        "percent_venda_grupo_c",
+        "cobertura_em_dias_grupo_a",
+        "cobertura_em_dias_grupo_b",
+        "cobertura_em_dias_grupo_c"
+    ],
+    "metas": [
+        {
+            "nome_metrica": "percent_sku_com_estoque_negativo",
+            "valor_final_esperado": 5,
+            "unidade": "percent",
+            "tipo": "menor_que"
+        },
+        {
+            "nome_metrica": "percent_sku_inativo_(estoque_>_0)",
+            "valor_final_esperado": 10,
+            "unidade": "percent",
+            "tipo": "menor_que"
+        },
+        {
+            "nome_metrica": "cobertura_em_dias_grupo_c",
+            "valor_final_esperado": 120,
+            "unidade": "dias",
+            "tipo": "menor_que"
+        }
+    ]
+}

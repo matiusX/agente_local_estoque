@@ -1,0 +1,4 @@
+id_planejamento,nome_metrica,valor_final_esperado,unidade,tipo
+1,percent_sku_com_estoque_negativo,5,percent,menor_que
+1,percent_sku_inativo_(estoque_>_0),10,percent,menor_que
+1,cobertura_em_dias_grupo_c,120,dias,menor_que

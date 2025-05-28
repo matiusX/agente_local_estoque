@@ -1,0 +1,4 @@
+id_acao,id_planejamento,desc_acao,impacto_esperado
+1,1,"Implementar inventário cíclico semanal, priorizando SKUs grupo A e B com histórico de divergências","Redução de 80% nas divergências de estoque;Aumento de 15% na assertividade de disponibilidade para venda;Melhoria no atendimento ao cliente por ter informações confiáveis"
+2,1,"Criar programa de liquidação progressiva para SKUs sem venda há mais de 1 ano; Realizar cross-selling com produtos ativos","Liberação imediata de espaço físico;Conversão de produtos sem giro em receita;Redução de custos com  manutenção de estoque obsoleto"
+3,1,"Revisar parâmetros de reposição com política diferenciada por grupo ABC; Implementar modelo de estoque mínimo para grupo C","Equilíbrio entre capital investido e nível de serviço;Redução de compras desnecessárias;Melhoria no fluxo de caixa por otimização do capital de giro"
